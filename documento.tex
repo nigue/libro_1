@@ -1,0 +1,207 @@
+%definición del artículo
+\documentclass[a4paper,12pt,openany,oneside]{book}
+\usepackage[left=5cm,right=2cm,top=4cm,bottom=4cm,paperwidth=216mm,paperheight=330mm,pdftex]{geometry}
+%paquete usado para silabación en español
+\usepackage[spanish]{babel}
+%codificación del documento
+\usepackage[utf8]{inputenc}
+%espaciado
+\linespread{1.5}
+%identación de párrafo
+\setlength{\parindent}{20pt}
+%espaciado de párrafo
+\setlength{\parskip}{4ex plus 0.5ex minus 0.2ex}
+%para validar sólo sintaxis sin compilar
+%\usepackage{syntonly}
+%\syntaxonly
+%para usar imágenes
+\usepackage{graphicx}
+%para usar fragmentos de codigo fuente
+\usepackage{listings}
+\usepackage{float}
+\floatstyle{boxed}
+\newfloat{codigo}{thp}{lop}
+\floatname{codigo}{Caja de Código}
+%comienzo del documento
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\textbf{UNIVERSIDAD TECNOLÓGICA METROPOLITANA\\
+ESCUELA DE INFORMÁTICA}\\
+\vspace{3cm}
+SISTEMA ESTADISTICO DE PROFESORES Y ALUMNOS\\S.E.P.A.
+\end{center}
+\begin{flushright}
+TRABAJO DE TÍTULO PARA OPTAR AL\\
+TÍTULO DE INGENÍERO CIVIL EN\\
+COMPUTACIÓN\\
+MENCIÓN INFORMÁTICA.\\
+\vspace{3cm}
+PROFESOR GUÍA: Sebastián Salazar Molina\\
+\vspace{1.5cm}
+Miguel Angel Aníbal Davor Fuenzalida Pino
+\end{flushright}
+\vspace{4cm}
+\begin{center}
+SANTIAGO - 2012
+\end{center}
+\newpage
+\thispagestyle{empty}
+\begin{flushright}
+\vspace{20mm}
+Nota: \line(1, 0){140} \\
+\vspace{30 mm}
+\line(1, 0){180}\\	
+Firma y Timbre\\
+Autoridad Responsable
+\end{flushright}
+\chapter*{Resumen}
+\thispagestyle{empty}
+El presente documento se encarga formalmente de entregar toda la información pertinente, hacia el desarrollo de un sistema de integración comercial hacia Falabella. Este trabajo busca mostrar la implementación que ha de desarrollarse para la producción de un sistema moderno que permita centralizar el sistema de ventas on-line de Falabella. Desde la perspectiva del desarrollador, esto resulta  muy valioso, ya que en este punto se detallan las particularidades con las que uno como Ingeniero Informático es capaz de afrontar de manera solida y verificando las distintas mejoras que se van produciendo en el camino.
+
+Las etapas de desarrollo necesarias son el punto clave de este proyecto. Ya que en el desarrollo de la aplicación surge un sin numero de instancias que nos permiten llevar a cabo la producción de un sistema confiable, el cual indudablemente, establece mejoras con respecto a sus versiones anteriores. Dejando atrás incluso a competidores dentro del rubro en el cual la empresa se ve en cercanía con sus pares.
+\tableofcontents
+\listoffigures
+\chapter*{Introducción}
+\thispagestyle{empty}
+El presente informe es la documentación que pertenece a la producción de un sistema informático que potencia el sistema de compras on-line para la empresa Falabella. Este proyecto actualmente se desarrolla en la empresa Orange People y esta siendo respondido por un equipo de trabajo en el cual uno de los desarrolladores hace un trabajo de Título perteneciente a su carrera. 
+Particularmente se tiene que el diseño del sistema de pagos en comercios asociados ya existe. Por lo cual este sistema es una nueva versión del sistema de pagos antiguo. Respondiendo a una demanda tecnológica que el cliente viene pidiendo.
+Lo que se busca particularmente es producir una herramienta que sea totalmente innovadora en la manera de realizar su trabajo. Ocupando la tecnología mas avanzada hasta el momento.
+Por lo cual el cliente podrá ofrecer un sistema de pago a sus comercios asociados, que sea mas cómodo, fácil de usar  y que finalmente integre a mas clientes a ocupar plataformas electrónicas  de manera segura.
+En el Capitulo 1 se habla particularmente de los antecedentes que llevan el diagnostico de la situación particular que se tiene y como esta opera para sacar adelante los problemas que se pueden asociar al proyecto.
+En el Capitulo 2 se muestra la estructura general de la organización y como esta dedica esfuerzo y tiempo para resolver la problematica. Que sin mas mencionar pertenece a un negocio que la empresa realiza con un cliente.
+En el Capitulo 3 se desarrolla la tematica que envuelve al problema que se tiene a resolver y se muestra una visión potencial que nos indica como será un posible futuro con respecto al proyecto
+En el Capitulo 4 se encuentra la base de conocimientos que nos ayudarán a resolver el problema general. y como uno deve abordar las tematicas particulares y los problemas asociados, con el objetivo final de resolver el desarrollo del proyecto.
+\chapter{Antecedentes}
+\thispagestyle{empty}
+\section{Contexto General}
+El desarrollo de la aplicación se lleva a cabo dentro del marco de una empresa de informática llamada Orange People. La cual se enfoca particularmente en soluciones empresariales que permiten la generación de oportunidades para empresas, tales como: mejorar sus condiciones frente a los cambios tecnológicos de esta época, generar buenos negocios dentro de su rubro y potenciar la capacidad de producir nuevos negocios a futuro, captando clientes y socios.
+\section{Contexto Particular}
+Dentro de la obtención de negocios por parte de la empresa Orange People, se esta produciendo un polo   que permite a grandes empresas generar negocios particulares en distintas casas comerciales, para lo cual nosotros como organización estamos en producción de un sistema de pagos que permite a cualquier tienda grande, posibilitar a empresas chicas o pymes el pago de sus productos con un sistema de pago perteneciente a la empresa grande.
+Ejemplo de esto es la posibilidad de comprar en muchos locales con tarjetas de casas comerciales, adquiriendo características de compra, ya sea descuentos o promociones provenientes de la casa comercial que engloba a los comercios adheridos.
+\section{Problema}
+La imposibilidad por parte de Falabella de tener un nuevo sistema de control de pago con tarjeta Falabella en casas comerciales asociadas. Para lo cual la principal problemática era la imposibilidad de registrar estos pagos con un sistema que fuera particularmente estable y lo mas importante, que estuviera descentralizado. Haciendo su portabilidad y disponibilidad mas alta que su versión anterior.
+\chapter{La Organización}
+\thispagestyle{empty}
+\section{Misión}
+Ser una empresa que entrega productos de la mas alta calidad, incorporando las tecnologías mas recientes. Potenciando la capacidad de realización de nuestros clientes. Mejorando los estándares a nivel continental sobre el uso de buenas practicas. Influir en el curso del avance de las tecnologías venideras.
+\section{Visión}
+Entregar herramientas computacionales de una calidad por sobre el resto de los competidores. Dando apoyo y mostrando características de la tecnología reciente que dan valor agregado a nuestros productos. Potenciando las capacidades de nuestros clientes. Generando nuevos contactos y negocios.
+\section{Organigrama Empresarial}
+La empresa se compone particularmente de 12 empleados que trabajan de manera distribuida en distintos proyectos, frente a las políticas de la organización:
+
+Un Gerente General que se encarga de las actividades de comunicación con lo nuevos clientes y potencia el trabajo en los proyectos que están barajando para el futuro de la empresa.
+
+Tres Jefe de Proyectos, de los cuales dos de ellos se preocupan particularmente por la legislación de los proyectos en concreto y establecen comunicación con los clientes, guiándolos en el proceso productivo. Ellos potencian el trabajo, ya que al establecer contacto con el cliente, pueden generar la posibilidad para potenciar el trabajo. El otro Jefe de Proyectos administra la funcionalidad táctica de todos los proyectos y legisla con una visión general de la situación de la empresa.
+
+Ocho programadores que trabajan con capacidades en distintos temas y tecnologías. Abarcando en su conjunto un gran abanico de capacidades que nos ayudan a realizar los proyectos de manera solida y confiable para el cliente.
+\section{Estructura de desarrollo el proyecto}
+El proyecto de Botón Falabella se desarrolla frente a la acción de la Jefatura por parte de un encargado de los proyectos. En este caso particular tenemos a un jefe de proyecto que asigna a Miguel Fuenzalida y a otro Desarrollador en las tareas de generación del producto que se tiene llevar a cabo.
+
+En esta estructura de trabajo podemos ver como el Jefe de proyectos trae información importante y responde dudas que van surgiendo a medida que el proyecto avanza. Por su parte uno de los desarrolladores se encarga de la parte estructural del proyecto, mientras que Miguel Fuenzalida se encarga de la parte funcional de la aplicación. Esto resulta importante ya que Miguel Fuenzalida tiene la tarea de dar valor agregado al producto final.
+\chapter{Problema}
+\thispagestyle{empty}
+\section{Diagnóstico sin proyecto}
+Falabella tiene un sistema de asociación de comercios exteriores a su sistema de pagos en linea. Por lo cual es posible convertir la compra de un articulo por medio de internet a una compra exclusiva de la empresa que recibe el producto. El problema consiste en que si hay algún cambio en el protocolo de comercio dentro de Falabella, es necesario cambiar las políticas de compra y venta en todos los comercios adheridos al cliente general. Esto resulta bastante engorroso. 
+\section{Diagnóstico con proyecto}
+Por lo cual se pidió a Orange People la realización de un sistema autónomo que permita la integración de distintos comercios con el sistema de pago de Falabella, pero a su ves que el sistema fuera independiente y este solo envíe una información encriptada que facilita la comunicación a través de un protocolo establecido entre el sistema que el comercio adopta y Falabella. Siendo estas dos aplicaciones totalmente independientes.
+\section{Objetivos Generales y Específicos}
+\subsection{Objetivos Generales}
+\textit{Dessarrollar un sistema de integración para comercios adjuntos a Falabella, el cual permita generar un botón de pagos en internet que sea transparente al comercio y al cliente final, de manera segura y confiable.}
+\begin{enumerate}
+\item La realización de un sistema de compra y venta que adjunte un comercio a compras hechas en Falabella de manera independiente, sin tener que sobre escribir las características y políticas de compra y venta en Falabella.
+\item Generar un producto adecuado que sea fácil de implementar, moderno y confiable para cualquier casa comercial que quiera asociarse con Falabella.
+\item Desarrollar una documentación extensiva que permita realizar un trabajo de Titulo para el alumno que esta trabajando en la organización.
+\end{enumerate}
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+\item Desarrollar un sistema de pagos a través de Falabella que sea totalmente disponible y que permita la integración de múltiples tecnologías ágiles de implementación en distintos puntos.
+\item Generar negocio frente a una gran empresa como lo es Falabella.
+\item Potenciar las capacidades de compra y venta de los clientes asociados que adquieran por partes terceras este producto.
+\item Crear un software que corresponda con características de desarrollo estándares para las buenas practicas y la correcta implementación.
+\item Producir una correcta documentación de las actividades y las características en su totalidad del sistema que se esta estudiando.
+\end{enumerate}
+\chapter{Alcances y Limitaciones}
+\thispagestyle{empty}
+\section{Alcances del Proyecto}
+El proyecto es un puente de acceso para organizaciones que quieran agregar un sistema de pago flexible y cómodo, adicionando clientes de la empresa Falabella a su rubro. Por lo cual cada uno de ellos dispondrá de un sistema integro. Esto comprende dos partes.
+
+Una cara, es la del cliente, el cual debe insertar la aplicación encargada de realizar una compra y encriptar un mensaje que será leído posteriormente. Para esto el cliente debe establecer un contrato con Falabella. En ese proceso se le otorgará al cliente un kit de instalación con el soporte adecuado. El cliente debe tener instalado en su servidor, el sistema que permite la recepción de la compra, encriptar los datos de petición de compra a Falabella y finalmente enviar por método post el mensaje encriptado.
+
+La otra cara es el servicio es la que hace la recepción el mensaje. Este sistema se encuentra en un servidor externo perteneciente al cliente. Por lo cual su disponibilidad va a ser tan grande como la cantidad de peticiones de compra lleguen encriptadas. Su funcionamiento particular radica en la obtención del mensaje encriptado, la extracción del mensaje, el despliegue de un sistema de pago, para que algún cliente final pueda realizar y finalizar la compra a través del sistema asociado y con las características de pago que su proveedor, sea capaz de otorgarle. Después se envía el pago a Falabella, el cual da un mensaje de recepción. Diciendo que la compra esta correcta o incorrecta.
+
+Finalmente existe otro sistema que es el que permite el almacenamiento de llaves publicas. Ya que como este proyecto se basa particularmente en la obtención de datos encriptados. Falabella debe poseer las llaves publicas de sus clientes asociados con el fin de desencriptar sus mensajes y realizar sus pagos.
+\section{Limitaciones del Proyecto}
+El proyecto solo esta enfocado a establecer un puente entre el cliente general llamado Falabella y los clientes particulares que son los comercios que deseen asociarse con  Falabella. Esto lleva a preguntarse si es posible la producción del sistema para otros clientes generales, siendo el mismo sistema el puente que los sustente. Siendo la respuesta un no, ya que para otro cliente, puede no tener los mismos datos a encriptar. Lo que hace que el sistema de persistencia del proyecto no funcione para otras instancias mas que para Falabella.
+
+Falabella de acuerdo a sus mecanismos, es capas de insertar un sistema en una tienda asociada, por lo cual nosotros como desarrolladores del producto que se va a entregar a Falabella no tenemos que desarrollar tiendas para sus contratos. Lo que quiere decir que el proyecto solo contará con tiendas de prueba que serán evaluadas en Falabella para su posterior utilización, Cabe destacar que esta utilización ya no es parte de nuestro proyecto.
+
+Con respecto al servicio de recepción del mensaje, cabe destacar que el producto que entregaremos realiza la ejecución establecida con el cliente. Por lo tanto los desarrolladores se comprometen a entregar las funcionalidades y características establecidas con anterioridad. Para lo cual el sistema solo contempla la obtención y desencriptación del mensaje en su totalidad. Únicamente para poder enviar otra encriptación de compra hacia Falabella. Entregando un sistema aislado de los servicios actuales y proporcionando a su ves una mayor rapidez a la hora de efectuar las transacciones en linea.
+\section{Alcances del Trabajo de Título}
+El desarrollo de este trabajo va enfocado en la capacidad de realizar un proyecto de una envergadura tal que sea posible la verificación de todos sus componentes particulares, esto quiere decir que en el proceso de desarrollo del Trabajo de Título, se verán muchas aristas que pondrán a prueba la capacidad del alumno en pos de poder generar un producto interesante y con valor agregado frente a un contrato que se establece entre la empresa que desarrolla la aplicación y el cliente general del producto.
+
+Por esta razón es importante que el participante de este trabajo sienta como propio las características principales del proyecto en si. Por lo cual es necesario entender cada uno de los aspectos y funcionalidades que harán de este proyecto, un producto altamente útil.
+
+También es necesario incorporar el esfuerzo que significa la creación y documentación total del sistema en si. Contextualizando al alumno en el plano de un proyecto para una empresa que le es asignado, por lo cual el trabajador debe hacer frecuentes entregas de avances de tal proyecto.
+
+Por el otro lado es también muy importante la documentación adecuada para el proyecto de titulo. Lo que quiere decir que hay que dominar todos los aspectos técnicos para poder reflejarlos de una manera muy pulida en el documento.
+
+Para desarrollar esto de la mejor manera. El alumno va en pos de desarrollar el proyecto y a la ves documenta los avances que va teniendo. Por lo tanto es imperativo pensar que cada nueva característica que se incorpora en el producto, se transmite en el documento del proyecto de tesis.
+\section{Limitaciones del Trabajo de Título}
+La primera limitación, es particularmente la temporal esto quiere decir que para realizar el proyecto de titulo hay un tiempo determinado, y eso no va a la mano con el proyecto de Orange People, por lo cual es posible pensar que las características desarrolladas son todas las que se abordaron dentro de los tiempos acordados frente al desarrollo del documento de trabajo de título.
+
+Claramente se puede establecer que si el proyecto llega a tener etapas posteriores de desarrollo, estas no serán documentadas después de la entrega del documento de Trabajo de Título, por tanto todo el capitulo referente a cosas que van mas aya de lo establecido en el contrato entre Falabella y la empresa desarrolladora Orange People, estará en otro marco de desarrollo. En otras palabras, todo lo que no se encuentre en las etapas de desarrollo y sea dentro del contexto de otro proyecto no será tomado en cuenta en la creación del documento de Trabajo de Título.
+
+En el desarrollo del proyecto se menciono que solo existen dos desarrolladores, por lo cual no es lo mas recomendable usar herramientas de desarrollo ágil, ya que el trato entre los desarrolladores es totalmente expedito, y por lo cual no es necesario evaluar estrategias para incorporar estándares de desarrollo. Por otro lado tenemos comunicación constante con el cliente encargado de nuestro proyecto, lo que hace rápido el manejo de las distintas solicitudes del cliente con respecto a los requerimientos.
+
+No se hará uso de información de carácter sensible para los participantes del proyecto. Los cuales expresamente se protegen legalmente contra reproducción de información sensible u otros efectos que pueda tener la indebida llegada de datos no requeridos a la documentación. Cabe destacar que las pruebas realizadas se harán en el marco de productos de testeo y que no comprometen la vulnerabilidad  ni de Falabella, ni de Orange People, ni del alumno de Tesis ni del profesor guía.
+\chapter{Marco Teórico}
+\thispagestyle{empty}
+\section{Base Conceptual}
+\subsection{Establecer el problema}
+La situación en general se caracteriza por la necesidad de producir una mejora en el nivel tecnológico de un sistema antiguo que permite la forma de compra de tipo Falabella por parte de un comercio de carácter externo a la empresa. 
+
+La necesidad básica era implementar las funcionalidades básicas y también fomentar funcionalidades nuevas. Permitiendo mayor seguridad a la hora de traspasar datos desde el comercio adherido hacia el servidor central de la aplicación de compra de productos con sistema de tarjeta Falabella.
+
+La aplicación debe resolver el problema de la permanencia de los datos en un servidor externo y tener registro individual de las transacciones que se llevan a cabo fuera de servidor central. Para estos efectos  se tendrá en cuenta que el sistema envía una solicitud de pago hacia Falabella.
+\subsection{Establecer la Solución}
+La solución planteada es un sistema capas de generar un flujo que sea totalmente persistido en un servidor a través de un modelo que nos permite llevar cuentas de manera mas lógica de como se hacia antes. Para lo cual el desarrollo se ira haciendo en varias etapas.
+
+Primeramente se creara una tienda que pueda generar un mensaje encriptado, después se genera un sistema de obtención de llaves, después se hace el proyecto que permite hacer las compras con Falabella y finalmente se hace el programa que encripta y envía la solicitud final de compra a través de los sistemas de Falabella.
+\subsection{¿Por que ocupar Java?}
+Para generar una solución óptima se requiere una tecnología que sea avanzada en el campo de las aplicaciones empresariales. En alta comparación con otros lenguajes de programación, Java lleva mas años especializándose en características que lo hacen mas fácil a la hora de tener que implementar estructuras de desarrollo y Frameworks que permitan cosas particulares con características que se necesiten a la hora de responder y atacar los problemas fundamentales de la creación de una aplicación robusta y con valor agregado.
+
+Puesto que en realidad el mayor valor es que esta echo en Java lo que nos permite asegurar una pronta respuesta frente a cambios, en comparación a otras tecnologías que particularmente se basan en hacer de manera diferente muchas cosas que van de la mano. En cambio en Java tenemos una multitud de Frameworks que nos permiten hacer y deshacer, siendo la característica mas importante. La utilización de interfaces que nos abstraen de tener que usar un Famework en especifico.
+
+En particular el compendio de aplicaciones que nosotros utilizaremos para llevar a cabo la tarea de generar el producto es J2EE. Que es un compendio de tecnologías web que nos permiten integrar múltiples funcionalidades a un sistema establecido y compacto. Haciendo el desarrollo mas rápido de lo pensado.
+\subsection{¿Por que no otras tecnologías?}
+En comparación con PHP el cual nos permite crear la pagina de manera rápida e incorporando con un framework la unidad de persistencia. Pero como desventaja esta el concepto de no tener elasticidad para hacer otras cosas. Parámetro por el cual Ruby on Rails podría llevar a cabo de mejor manera. Pero el punto frágil de Ruby es que como utiliza un Framework de propósito general (igual que PHP) su capacidad de aprendizaje es bastante costoso. 
+\section{Fundamentos Teóricos}
+\subsection{Tecnologías técnicas que se ocuparán}
+\begin{enumerate}
+\item Servidor de Aplicaciones Web: Ya sea apache Tomcat, JBoss o Glasfish, en general un servidor de aplicaciones nos permite tomar un servidor y convertirlo en un ejecutante sobre la maquina virtual de Java. Lo que ejecutaremos serán códigos compilados en Java y paginas. Dando lugar a proyectos Web.
+\item Ant: Creador de proyectos Java, permite la creación de tareas de compilación que son las encargadas de crear el programa que se inserta sobre el servidor de aplicaciones web de apache Tomcat/JBoss/Glasfish.
+\item Maven: Creador de proyectos en Java, permite la integración de la compilación de las clases con los archivos del proyecto entero, manipula las dependencias y ahorra el tedioso trabajo de ordenamiento del proyecto, todo de acuerdo a estandartes mundiales de creación para proyectos Java.
+\item JPA: Implementación para la abstracción de un framework de programación sobre el modelo de datos y la respectiva base de datos, sobre spring.
+\item Unidad de Encriptamiento: Sistema que nos permite manejar los mensajes encriptados desde el emisor hasta el receptor. Incluso con otros sistemas frente a ciertas condiciones y restricciones.
+\end{enumerate}
+\subsection{Frameworks que se ocuparán}
+\begin{enumerate}
+\item JSF: Poderosa herramienta que permite la programación de la interacción entre la vista y el controlador del proyecto, incorpora una serie de herramientas útiles que facilitan el desarrollo del controlador de forma limpia y eficiente. También se incluye una serie de elementos de la vista que facilitan la forma de mostrar la información al usuario final.
+\item PrimeFaces: Conjunto de librerías que proporcionan una visual y una estética para mostrar el dinamismo de las vistas de forma elegante y profesional. Facilita el desarrollo de las vistas incorporando a-sincronismo en varias de sus funcionalidades. 
+\item Spring: Framework Java que permite la integración de modelos de programación que se hacer fuertemente útiles para el modelo del proyecto, incorpora inyección de dependencias que ordena la forma de programar, sin tener que ensuciar código, estableciendo también AOP que es un paradigma de programación enfocado en el aspecto que devén tener las clases del controlador y como estas van siendo inyectadas para su potencial uso. 
+\item Hibernate: Implementación de JPA que permite la correcta abstracción del modelo de bases de datos hacia las clases del modelo del proyecto.
+\item PrettyFaces: Framework que nos permite mejorar la forma de implementar la navegación dentro del sistema de paginas. Mas que nada usado para contener las excepciones de error y la redirección a una pagina de error en el caso de la ejecución haya salido errónea.
+\end{enumerate}
+\subsection{Forma genérica de la Solución}
+El sistema se compone de un recepcionista de datos encriptados. Para lo cual lo único que mira es una llamada en POST con un parámetro de nombre inXML el cual lleva un mensaje que hay que codificar.
+
+Si la codificación es Exitosa se pasa a un sistema de pago referente a Falabella. En donde el usuario pondrá información característica de su compra y posteriormente envía esta solicitud de compra.
+
+Finalmente se vuelve a encriptar otro mensaje con la confirmación de compra, que posteriormente Falabella aceptará, así dando por finalizada la compra.
+
+Este sistema es auto instalable en cualquier tipo de comercio que quiera adherirse a pagos con la tarjeta CMR de Falabella.
+\subsection{Implementación de la Solución}
+
+La característica principal de la solución es que se implementa sobre tecnologías robustas que nos aseguran un dominio total de los estándares de calidad de un producto Web que permita la interacción de un sistema de pago eficiente y exitoso.
+\end{document}
